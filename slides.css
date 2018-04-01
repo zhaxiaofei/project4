@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(0, 1, 4);
+}
+@font-face {
+font-family: 'myicon';  /* project id 588771 */
+src: url('//at.alicdn.com/t/font_588771_xmi8kccmzxvtpgb9.eot');
+src: url('//at.alicdn.com/t/font_588771_xmi8kccmzxvtpgb9.eot?#iefix') format('embedded-opentype'),
+url('//at.alicdn.com/t/font_588771_xmi8kccmzxvtpgb9.woff') format('woff'),
+url('//at.alicdn.com/t/font_588771_xmi8kccmzxvtpgb9.ttf') format('truetype'),
+url('//at.alicdn.com/t/font_588771_xmi8kccmzxvtpgb9.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family: 'myicon'!important;
+    font-size: 30px;
+    font-style: normal;
+    cursor: pointer;
+    color: aliceblue;
+}
+.slideShow{
+    max-width:500px;
+    height: 300px;
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+}
+.clear-fix:after{
+    display:block;
+    content: '';
+    clear: both;
+}
+.slides-container{
+    list-style: none;
+    width:5000px;
+    position: absolute;
+}
+.slides-container>li{
+    max-width: 500px;
+    height: 300px;
+    float: left;
+}
+ .slides-container>li img{
+    width:100%;
+    height: 100%;
+}
+.arrow-left{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrow-left:hover{
+    color: rgb(14, 13, 13);
+    opacity: 0.5;
+}
+.arrow-right:hover{
+    color: rgb(14, 13, 13);
+    opacity: 0.5;
+}
+.arrow-right{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.status{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.status>li{
+    display:inline-block;
+    margin:0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+    color: #fff;
+    background-color: rgba(19, 9, 9, 0.5);
+    cursor: pointer;
+}    
+.status>.showwed{
+    color: rgb(73, 192, 156);
+}
+.status>li:hover{
+    color: rgb(26, 62, 63);
+}
+.author{
+    color:rgb(158, 151, 151);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 500px;
+    margin:0 auto;
+    margin-top: 40px;
+}
+.author>p{
+    margin-top:30px;
+    color: rgb(95, 146, 131);
+    font-size: 12px;
+}
