@@ -43,7 +43,6 @@ function playPre(num) {
         }
     )
 }
-
 //改变小按钮状态函数
 function changeStatus() {
     $statusLi.removeClass('showwed')
@@ -57,7 +56,6 @@ $statusLi.click(function () {
         playNext(index - currentSlideIdx)
     }
 })
-
 $('.arrow-left').click(function () {
     playNext(1)
 })
